@@ -14,7 +14,7 @@ export default function HomePage() {
     <>
       <Hero />
       <CategoryTiles />
-      <ProductSection id="rudraksha" title="Choose Your Rudraksha hrithik" subtitle="Each Mukhi carries a distinct energy, by tradition."
+      <ProductSection id="rudraksha" title="Choose Your Rudraksha" subtitle="Each Mukhi carries a distinct energy, by tradition."
         products={rudraksha} filter={{ options: categories, value: cat, onChange: setCat }} />
       <ProductSection id="gems" title="Precious Gemstones" subtitle="Traditionally worn after consulting a qualified astrologer."
         products={listByType("gemstone")} />

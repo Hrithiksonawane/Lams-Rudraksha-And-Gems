@@ -86,6 +86,14 @@ input, textarea {
         flex: none
     }
 
+    .line > div:first-child img {
+        width: 54px;
+        height: 54px;
+        display: block;
+        object-fit: contain;
+        border-radius: 0
+    }
+
     .line div {
         flex: 1;
         font-size: .92rem
