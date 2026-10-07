@@ -13,5 +13,23 @@ const rows = [
 export const gemstones = rows.map(([name, planet, base, light, tagline, benefits, price], i) => ({
   id: `g${i}`, type: "gemstone", name, subtitle: `Planet · ${planet}`, tagline,
   benefits: [...benefits, "Natural gemstone"], price, art: { kind: "gem", base, light },
-  photo: name === "Pearl (Moti)" ? "images/pearl.png" : undefined,
+  photo: name === "Pearl (Moti)"
+    ? "images/pearl.png"
+    : name === "Ruby (Manik)"
+      ? "images/ruby.png"
+      : name === "Red Coral (Moonga)"
+        ? "images/red-coral.png"
+        : name === "Emerald (Panna)"
+          ? "images/emerald.png"
+          : name === "Yellow Sapphire (Pukhraj)"
+            ? "images/yellow-sapphire.png"
+            : name === "Diamond (Heera)"
+              ? "images/diamond.png"
+              : name === "Blue Sapphire (Neelam)"
+                ? "images/blue-sapphire.png"
+                : name === "Hessonite (Gomed)"
+                  ? "images/hessonite.png"
+                  : name === "Cat's Eye (Lehsunia)"
+                    ? "images/catseye.png"
+                    : undefined,
 }));
