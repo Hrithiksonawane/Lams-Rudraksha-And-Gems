@@ -38,7 +38,7 @@ export default function ProductPage() {
           <p className="note">Benefits are traditional beliefs, not medical claims. Every bead is natural, so exact size and shade may vary slightly.</p>
         </div>
       </div>
-      <div style={{ marginTop: 70 }}><SectionHead title="You May Also Like" /></div>
+      <div style={{ marginTop: 70 }}><SectionHead title="You May Also Like Below Items" /></div>
       <ProductGrid products={listRelated(product)} />
     </div>
   );

@@ -13,4 +13,5 @@ const rows = [
 export const gemstones = rows.map(([name, planet, base, light, tagline, benefits, price], i) => ({
   id: `g${i}`, type: "gemstone", name, subtitle: `Planet · ${planet}`, tagline,
   benefits: [...benefits, "Natural gemstone"], price, art: { kind: "gem", base, light },
+  photo: name === "Pearl (Moti)" ? "images/pearl.png" : undefined,
 }));
